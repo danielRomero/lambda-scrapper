@@ -12,3 +12,7 @@ Create Zip lambda
 TODO:
 - Support both JSON and HTML requests
 - Suport latest and random endpoints (code ready)
+
+Invocation:
+
+https://jww843zdn1.execute-api.eu-west-1.amazonaws.com/prod/cyanide-and-hapiness
