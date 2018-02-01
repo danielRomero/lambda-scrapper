@@ -20,7 +20,7 @@ function getImageComic (url, css_img_selector) {
 
 function parse_image_url(image_url){
   if(image_url.startsWith("//")){
-    return image_url.slice(2); // remove first two chars of string
+    return "https:" + image_url
   }else{
     return image_url
   }

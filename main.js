@@ -12,18 +12,26 @@ function main (event, context, callback) {
   // resourcePath
 
   randomComic().then(function (image_url) {
-    callback(null, success_response(image_url));
+    callback(null, success_response_html(image_url));
   })
   .catch(function (error) {
     callback(error_response());
   });
 }
 
-function success_response(image_url){
+
+// function success_response_json(image_url){
+//   return {
+//     statusCode: 200,
+//     headers: {"Content-Type": "application/json"},
+//     body: JSON.stringify({comic: image_url})
+//   }
+// }
+function success_response_html(image_url){
   return {
     statusCode: 200,
-    headers: {"Content-Type": "application/json"},
-    body: JSON.stringify({comic: image_url})
+    headers: {"Content-Type": "text/html"},
+    body: '<img src="'+image_url+'" alt="'+image_url+'">'
   }
 }
 
