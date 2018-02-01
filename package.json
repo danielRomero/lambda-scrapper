@@ -1,0 +1,24 @@
+{
+  "name": "lambda-scrapper",
+  "version": "1.0.0",
+  "description": "aws lambda scrapper for cyanide and hapiness",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "aws-sdk": "^2.188.0",
+    "axios": "^0.17.1",
+    "cheerio": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "api",
+    "cyanide and happiness",
+    "scrapper"
+  ],
+  "author": "danielRomero",
+  "license": "MIT"
+}
